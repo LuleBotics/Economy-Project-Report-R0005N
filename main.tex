@@ -6,7 +6,7 @@
 \usepackage{parskip}
 \usepackage{pdfpages}
 %\usepackage{apa6}
-\usepackage[margin=1.0in]{geometry}
+\usepackage[margin=1in]{geometry}
 
 % Equations
 % \usepackage{amsmath}
@@ -38,9 +38,11 @@
 \section{Introduktion}
 \input{inc/introduktion.tex}
 
+\newpage
 \section{Resultat}
 \input{inc/resultat.tex}
 
+\newpage
 \section{Diskussion}
 \input{inc/diskussion.tex}
 
@@ -49,5 +51,4 @@
 \bibliography{ref}
 \appendix
 \includepdf[pages=1,scale=.9,pagecommand={\section{Frågor till intervju om produktkalkyl}\label{apdx:fragor}},linktodoc=true]{inc/fragor.pdf}
-%\includepdf{inc/fragor.pdf}
 \end{document}
