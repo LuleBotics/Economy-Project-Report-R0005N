@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+
+% Document
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{parskip}
+\usepackage{pdfpages}
+\usepackage[margin=1.0in]{geometry}
+
+% Equations
+% \usepackage{amsmath}
+% \usepackage{siunitx}
+
+% Graphics
+\usepackage{graphicx}
+% \usepackage{tikz}
+
+% Tables
+% \usepackage{booktabs}
+% \usepackage[tableposition=top]{caption}
+
+% References
+\usepackage{apacite}
+\usepackage{url}
+%\usepackage{hyperref}
+
+\begin{document}
+\pagenumbering{gobble} % Remove page numbering
+
+\includepdf{inc/front.pdf}
+
+\tableofcontents
+\newpage
+
+\pagenumbering{arabic} % Start page numbering
+
+\section{Introduktion}
+\input{inc/introduktion.tex}
+
+\section{Resultat}
+\input{inc/resultat.tex}
+
+\section{Diskussion}
+\input{inc/diskussion.tex}
+
+\newpage
+\bibliographystyle{apacite}
+\bibliography{ref}
+\end{document}
