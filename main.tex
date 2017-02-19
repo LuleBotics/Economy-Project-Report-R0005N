@@ -5,8 +5,9 @@
 \usepackage[swedish]{babel}
 \usepackage{parskip}
 \usepackage{pdfpages}
+\usepackage[]{dirtytalk}
 %\usepackage{apa6}
-\usepackage[margin=1in]{geometry}
+%\usepackage[margin=1in]{geometry}
 
 % Equations
 % \usepackage{amsmath}
@@ -39,6 +40,10 @@
 \input{inc/introduktion.tex}
 
 \newpage
+\section{Metod}
+\input{inc/metod.tex}
+
+\newpage
 \section{Resultat}
 \input{inc/resultat.tex}
 
@@ -50,5 +55,5 @@
 \bibliographystyle{apacite}
 \bibliography{ref}
 \appendix
-\includepdf[pages=1,scale=.9,pagecommand={\section{Frågor till intervju om produktkalkyl}\label{apdx:fragor}},linktodoc=true]{inc/fragor.pdf}
+\includepdf[pages=1,scale=.8,pagecommand={\section{Frågor till intervju om produktkalkyl}\label{apdx:fragor}},linktodoc=true]{inc/fragor.pdf}
 \end{document}
